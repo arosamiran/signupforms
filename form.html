@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="materialize/css/materialize.css">
+  <script src="materialize/js/materialize.js"></script>
+  <style>
+    .btn {
+      text-align: center;
+      float: right;
+    }
+
+    form {
+      margin: auto;
+      font-family: geosanslightregular;
+      font-size: 1.2em;
+    }
+
+    .form {
+      margin: auto;
+      padding: 20px;
+      width: 60%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.4);
+      display: flex;
+    }
+
+    body {
+      background-image: url(img/Milkyway.jpg);
+    }
+
+    .wrapper{
+      margin: 20px;
+      height: 700px;
+      display: flex;
+
+    }
+
+    @font-face {
+    font-family: 'adamcg_proregular';
+    src: url('fonts/adam.cg_pro-webfont.woff2') format('woff2'),
+         url('fonts/adam.cg_pro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'geosanslightregular';
+    src: url('fonts/geosanslight-webfont.woff2') format('woff2'),
+         url('fonts/geosanslight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h3{
+  color: #1a237e;
+  text-align: center;
+  margin: 20px;
+  font-family: adamcg_proregular;
+}
+  </style>
+  <script>
+    function signup(){
+      document.getElementById('wrapper').innerHTML = "<h3>Account created!</h3>"
+    }
+  </script>
+</head>
+
+<body class="container">
+  <div class="wrapper" id="wrapper">
+
+    <div class="row form">
+      <form class="col s12 m10 l8">
+        <h3>New user</h3>
+        First name:
+        <input type="text"> Last name:
+        <input type="text"> Email:
+        <input type="text"> Password:
+        <input type="Password"> Confirm password:
+        <input type="Password">
+  
+        <input type="button" value="Sign up" class="btn">
+      </form>
+  
+    </div>
+  </div>
+</body>
+
+</html>
